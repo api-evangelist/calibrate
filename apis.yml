@@ -1,8 +1,23 @@
 aid: calibrate
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/calibrate.png
 name: Calibrate
-description: 'Calibrate is a company surfaced as a portfolio company of threshold-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Calibrate is a telehealth metabolic-health and weight-loss company that pairs
+  clinician-prescribed GLP-1 medications with 1:1 video coaching and a science-backed educational
+  curriculum to help members improve metabolic health and achieve sustainable weight loss. Programs
+  are sold directly to individuals (from $199/month) and through employer benefits. Calibrate delivers
+  its service through consumer web and iOS mobile apps rather than a public developer API; this profile
+  tracks the company''s public web and account surface. Backed by Threshold Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/calibrate/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Telehealth
+- Weight Loss
+- Metabolic Health
+- GLP-1
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/calibrate-domain-security.yml
 - type: Website
   url: https://www.joincalibrate.com/
+- type: Pricing
+  url: https://www.joincalibrate.com/pricing
+- type: Blog
+  url: https://www.joincalibrate.com/resources
+- type: Support
+  url: https://www.joincalibrate.com/faqs
+- type: TermsOfService
+  url: https://www.joincalibrate.com/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.joincalibrate.com/legal/privacy-policy
+- type: SignUp
+  url: https://apply.joincalibrate.com/
+- type: Login
+  url: https://app.joincalibrate.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
